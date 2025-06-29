@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="portfolio icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PM-PORTFOLIO WEBSITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(4, 4, 48);
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(29, 29, 72);
+  }
+
+  .right {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .left ul li {
+    list-style: none;
+    text-align: center;
+  }
+
+  .left ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  .left ul li a:hover {
+    color: rgb(166, 157, 139);
+  }
+
+  .firstsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .leftsection {
+    font-size: 2rem;
+    max-width: 90%;
+  }
+
+  .rightsection img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #element {
+    color: aqua;
+  }
+
+  .secondsection {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  main hr {
+    height: 1px;
+    border: 0;
+    background: rgb(39, 52, 85);
+    margin: 30px 0;
+  }
+
+  .skills-section {
+    text-align: center;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8rem;
+    color: #00ffcc;
+    margin-bottom: 30px;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-box {
+    background-color: #1e1e1e;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+
+  .skill-box:hover {
+    background-color: #00ffcc;
+    color: #121212;
+    transform: scale(1.05);
+    cursor: default;
+  }
+
+  a[download] {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #00ffcc;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+  footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-family: sans-serif;
+  }
+
+  /* Responsive for larger screens */
+  @media screen and (min-width: 768px) {
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 65px;
+    }
+
+    .right {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .left ul {
+      flex-direction: row;
+    }
+
+    .firstsection {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+    }
+
+    .leftsection {
+      width: 45%;
+      font-size: 2.5rem;
+    }
+
+    .rightsection {
+      width: 45%;
+    }
+
+    .skills-section h2 {
+      font-size: 2rem;
+    }
+
+    .skill-box {
+      font-size: 1.1rem;
+    }
+
+    a[download] {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="right">This is PM'S Portfolio</div>
+        <div class="left">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hii, I am 
+          <span>Prashant</span> so good to see you on this website
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="website.png" alt="main image" />
+        </div>
+      </section>
+      <hr />
+      <div class="secondsection">
+          <section class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Java</div>
+      <div class="skill-box">SQL</div>
+      <div class="skill-box">ReactJS</div>
+    </div>
+  </section>
+  <a href="Prashant's Resume.pdf" download style="
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00ffcc;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
+">
+  Download Resume
+</a>
+
+</div>
+ 
+      
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["HAVE A GREAT VISIT!"],
+        typeSpeed: 50,
+      });
+    </script>
+    <!-- <footer style="background-color:#1e1e1e; color:#ccc; text-align:center; padding:15px; position: relative; bottom:0; width:100%; font-family:sans-serif;">
+  © Prashant Mishra. All rights reserved.
+    </footer> -->
+    <footer> ©2025 Prashant Mishra. All rights reserved.</footer>
+    
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PM</title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(4, 4, 48);
+    color: whitesmoke;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(29, 29, 72);
+  }
+
+  .right {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .left ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .left ul li {
+    list-style: none;
+    text-align: center;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+
+  nav ul li a:hover {
+    color: rgb(166, 157, 139);
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #about h2 {
+    color: #00ffcc;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  #about p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: auto;
+    color: #eee;
+  }
+
+  #about img {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-family: sans-serif;
+    margin-top: 50px;
+  }
+
+  /* Desktop media query */
+  @media screen and (min-width: 768px) {
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 65px;
+    }
+
+    .right {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .left ul {
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    #about {
+      text-align: left;
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 40px;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+    }
+
+    #about img {
+      display: block;
+      margin: 40px auto 0;
+    }
+  }
+</style>
+
+</head>
+<body>
+     <!-- navbar -->
+    <header>
+    <nav>
+        <div class="right">This is PM'S Portfolio</div>
+        <div class="left">
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+        <section id="about" style="padding: 50px 20px; text-align: center;">
+  <h2 style="color: #00ffcc; font-size: 32px; margin-bottom: 20px;">About PM</h2>
+  <p style="font-size: 18px; max-width: 800px; margin: auto; line-height: 1.6;">
+    Hello! I'm <strong>Prashant Mishra</strong>, an aspiring front-end web developer with a passion for building clean, responsive, and user-friendly websites. I have a strong foundation in <span style="color: #00ffcc;">HTML, CSS, JavaScript, and Java</span> and I'm currently expanding my skills in ReactJS and real-world project development.
+    <br /><br />
+    I enjoy the creative process of turning ideas into interactive and meaningful digital experiences. Whether it's designing the layout or solving a tricky coding problem, I find great satisfaction in crafting web solutions.
+    <br /><br />
+    When I'm not coding, I enjoy exploring project management techniques, studying for my upsc exams, and working on my fitness.
+    <br /><br />
+    I'm actively looking to collaborate on exciting projects and grow as a developer. Let's connect and create something amazing together!
+  </p>
+  <img src="1696791055760.jpg" alt="pm image ">
+</section>
+
+    </main>
+    <footer> ©2025 Prashant Mishra. All rights reserved.</footer>
+</body>
+</html>
